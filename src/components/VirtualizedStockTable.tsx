@@ -24,12 +24,12 @@ export default function VirtualizedStockTable({
         <div>Sector</div>
       </div>
 
-      {/* ROWS */}
+      {/* TABLE BODY */}
       <div className="h-[600px] overflow-y-auto">
         {stocks.map((stock) => (
           <div
             key={stock.symbol}
-            className="grid grid-cols-4 items-center border-b px-4 h-[60px] hover:bg-gray-50"
+            className="grid grid-cols-4 items-center border-b px-4 py-4 hover:bg-gray-50"
           >
             <div className="font-bold">
               {stock.symbol}
